@@ -98,3 +98,79 @@ a{
 a:hover{
     color: #e6b800;
 }
+
+/* Mobile responsiveness code */
+
+/* Small Screens (Tablets & Mobile Phones) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        text-align: center;
+        padding: 15px;
+    }
+
+    header img {
+        width: 80px; /* Reduce profile image size */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation links */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        max-width: 90%;
+        padding: 20px;
+        margin: 10px auto;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column; /* Stack grid items */
+        align-items: center;
+    }
+
+    .grid li {
+        width: 90%;
+        padding: 8px;
+    }
+
+    .cta-button {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+}
+
+/* Extra Small Screens (Mobile Phones - Less than 480px) */
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 20px; /* Reduce heading size */
+    }
+
+    section h2 {
+        font-size: 18px;
+    }
+
+    .grid {
+        flex-direction: column;
+    }
+
+    .grid li {
+        width: 100%;
+    }
+
+    .blog-thumbnail {
+        width: 100%;
+        height: auto;
+    }
+}
